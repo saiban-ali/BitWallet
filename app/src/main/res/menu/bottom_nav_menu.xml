@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:title="@string/wallet" />
+    <item
+        android:id="@+id/send"
+        android:icon="@drawable/ic_file_upload_black_24dp"
+        android:title="@string/send" />
+    <item
+        android:id="@+id/scan"
+        android:icon="@drawable/ic_qr_code_scan"
+        android:title="@string/scan" />
+    <item
+        android:id="@+id/receive"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        android:title="@string/receive" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings" />
+
+</menu>

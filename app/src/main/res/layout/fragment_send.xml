@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:title="Send"
+        app:titleTextColor="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="true"
+        app:errorEnabled="true"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:startIconDrawable="@drawable/ic_account_balance_wallet_black_24dp"
+        app:startIconTint="@android:color/darker_gray"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="64"
+            android:hint="@string/coin_address"
+            android:textColorHint="@color/colorTextLight"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="true"
+        app:errorEnabled="true"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:startIconDrawable="@drawable/ic_nc"
+        app:startIconTint="@android:color/darker_gray"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/edittext_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="@string/amount"
+            android:textColorHint="@color/colorTextLight"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/scan_qr_code"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_qr_code_scan"
+        app:iconSize="35dp"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        app:cornerRadius="10dp"
+        app:rippleColor="@android:color/background_light"
+        android:layout_below="@id/edittext_amount"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/send"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_send_black_24dp"
+        app:iconSize="30dp"
+        app:iconGravity="start"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/colorPrimary"
+        app:rippleColor="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_below="@id/btn_scan"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BitWallet</string>
+    <string name="wallet">Wallet</string>
+    <string name="scan">Scan</string>
+    <string name="receive">Receive</string>
+    <string name="settings">Settings</string>
+    <string name="bit">Bit</string>
+    <string name="_0_02_usd">0.02 USD</string>
+    <string name="_0_00010000_b">0.00010000 B</string>
+    <string name="_0_001_b">+ 0.001 B</string>
+    <string name="feb_16_2019">Feb 16, 2019</string>
+    <string name="received_from_1516163131561">Received from 1516163131561</string>
+
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="coin_address">Coin Address</string>
+    <string name="amount">Amount</string>
+    <string name="send">Send</string>
+    <string name="qr_code">QR Code</string>
+    <string name="_1ffmbhfnpazjkfvyi1oktjjjusn455paph">1FfmbHfnpaZjKFvyi1okTjJJusN455paPH</string>
+    <string name="wallet_icon">Wallet Icon</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="notifications">Notifications</string>
+    <string name="about">About</string>
+    <string name="wallet_address">Wallet Address</string>
+    <string name="enter_wallet">Enter Wallet</string>
+    <string name="create_new_wallet">Create New Wallet</string>
+    <string name="or">OR</string>
+    <string name="address">Address</string>
+    <string name="passphrase">Passphrase</string>
+</resources>

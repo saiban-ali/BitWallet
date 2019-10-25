@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:title="Settings"
+        app:titleTextColor="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/settings_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:showDividers="middle"
+        android:divider="?android:listDivider">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_light"
+            android:text="@string/help_amp_support"
+            android:textColor="@color/colorText"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_help_outline_black_24dp"
+            app:iconTint="@color/colorPrimary"
+            app:iconPadding="20dp"
+            app:rippleColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_light"
+            android:text="@string/send_feedback"
+            android:textColor="@color/colorText"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_feedback_black_24dp"
+            app:iconTint="@color/colorPrimary"
+            app:iconPadding="20dp"
+            app:rippleColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_light"
+            android:text="@string/notifications"
+            android:textColor="@color/colorText"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_notifications_none_black_24dp"
+            app:iconTint="@color/colorPrimary"
+            app:iconPadding="20dp"
+            app:rippleColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_light"
+            android:text="@string/about"
+            android:textColor="@color/colorText"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_info_outline_black_24dp"
+            app:iconTint="@color/colorPrimary"
+            app:iconPadding="20dp"
+            app:rippleColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
